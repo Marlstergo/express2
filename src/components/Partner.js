@@ -3,13 +3,16 @@ import { Grid, Box, Flex, Heading } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
 // import {  GatsbyImage } from "gatsby-plugin-image";
 import { motion, AnimatePresence } from "framer-motion";
-import { graphql } from "gatsby";
-import PropTypes from "prop-types";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-bootstrap";
+// import { graphql } from "gatsby";
+// import PropTypes from "prop-types";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import { Carousel } from "react-bootstrap";
+// import "slick-carousel/slick/slick.css";
 
-export default function Partner({ data }) {
-  console.log(data);
+
+
+export default function Partner() {
+  
   return (
     <>
       <Box
@@ -103,92 +106,37 @@ export default function Partner({ data }) {
           </motion.div>
         </Grid>
       </Box>
-      <Box
-        // display={["block","block","none","none"]}
-        mt="12"
-        // h="80"
-        // w='80%'
-        // mx='autopoo'
-        tw=" md:hidden mt-12 flex items-center justify-center h-screen"
-      >
-        <div className="bg-yellow-500 h-96 overflow-hidden md:hidden">
-        <Carousel tw=" md:hidden flex items-center justify-center h-full">
-          
-          <Carousel.Item>
-            <StaticImage src="../images/asc-Fabrik-Logo.png" alt="Ascaso " />
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage
-              src="../images/DC_RGB_DALLA CORTE_GREY MARK_300DPI.png"
-              alt="CORTE_GREY"
-            />{" "}
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="flex items-center justify-center">
-            <StaticImage
-              src="../images/Eureka_1920_Logo-rot.jpg"
-
-              alt="Ascaso"
-            />
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/Mahlkoenig Logo.svg" alt="Ascaso" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage
-              src="../images/ECM Logo Vektor_einfach.svg"
-              alt="Ascaso"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/VBM-logo.png" alt="Ascaso" />
-          </Carousel.Item>
-        </Carousel>
-        </div>
-        {/* <Carousel>;
-      {data.slideShow.edges.map(({node}) => (
-        // <Carousel.Item key={node.id}>
-        //   <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base.split('-').join(' ').split('.')[0]} />
-        // </Carousel.Item>
-        // <p key={node.id} >
-        //   {node.base}
-          
-        // </p>
-        <p key={node.id}>ds</p>
-      ))}
-    </Carousel> */}
-      </Box>
-    </>
+      
+      </>
   );
 }
 
-Partner.propTypes = {
-  data: PropTypes.any,
-};
+// Partner.propTypes = {
+//   data: PropTypes.any,
+// };
 
-export const pageQuery = graphql`
-  query {
-    slideShow: allFile(
-      filter: { relativeDirectory: { eq: "slideshow" } }
-      sort: { fields: base, order: ASC }
-    ) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            gatsbyImageData(
-              height: 600
-              width: 900
-              placeholder: BLURRED
-              quality: 70
-              blurredOptions: { width: 100 }
-              transformOptions: { cropFocus: CENTER, fit: COVER }
-            )
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query {
+//     slideShow: allFile(
+//       filter: { relativeDirectory: { eq: "slideshow" } }
+//       sort: { fields: base, order: ASC }
+//     ) {
+//       edges {
+//         node {
+//           id
+//           base
+//           childImageSharp {
+//             gatsbyImageData(
+//               height: 600
+//               width: 900
+//               placeholder: BLURRED
+//               quality: 70
+//               blurredOptions: { width: 100 }
+//               transformOptions: { cropFocus: CENTER, fit: COVER }
+//             )
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;

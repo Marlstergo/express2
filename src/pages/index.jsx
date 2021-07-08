@@ -9,6 +9,7 @@ import { Box, Flex } from "@chakra-ui/react";
 // import EmbedYoutube from "../components/EmbedYoutube";
 import ScrollToTop from "react-scroll-to-top";
 import "../styles/global.css";
+import FormKontact from "../components/kontactus";
 // import GbiBridged from '../components/text'
 
 // import SVGLogoInlineSVG from "../images/svg_logo.inline.svg";
@@ -172,6 +173,7 @@ const IndexPage = () => {
           <ContentC title="Werkstatt" number="03" key="3" info="" />
           <ContentD title="Ersatzteile" number="04" info="" />
           <Partner />
+          <FormKontact />
         </Box>
         {/* <GbiBridged/> */}
       </main>
