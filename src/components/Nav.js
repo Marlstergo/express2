@@ -19,7 +19,10 @@ function Nav() {
           >
             Partner
           </Link>
-          <Link className="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100">
+          <Link
+            to="/"
+            className="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
+          >
             Kontakt
           </Link>
         </Flex>
