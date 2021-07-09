@@ -187,16 +187,13 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
       >
         <g id="g26">
           <motion.path
-            style={
-              {
-                // stroke: white
-                // fill: "purple",
-                // fill: aqua,
-                // scrollMarginBottom: '-'
-          opacity: opacity1,
-
-              }
-            }
+            style={{
+              // stroke: white
+              // fill: "purple",
+              // fill: aqua,
+              // scrollMarginBottom: '-'
+              opacity: opacity1,
+            }}
             fill="none"
             stroke="#1D1102"
             strokeWidth="44.8518"
@@ -220,7 +217,6 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           </g>
         </g>
       </motion.svg>
-
     </>
   );
 }

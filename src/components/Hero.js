@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import React from "react";
 import "twin.macro";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Logo from "../images/logo.svg";
 
@@ -22,8 +23,8 @@ function Hero() {
           }}
         >
           <div tw="z-0 flex items-center justify-center">
-            <motion.img
-              src={Logo}
+            <motion.StaticImage
+              src="../images/logo.svg"
               tw=""
               style={{
                 opacity,
