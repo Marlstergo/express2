@@ -12,8 +12,8 @@ import { graphql, useStaticQuery } from "gatsby";
 import "twin.macro";
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 export default function Partner() {
   const pageQuery = useStaticQuery(graphql`
@@ -42,7 +42,7 @@ export default function Partner() {
   console.log(pageQuery);
 
   const settings = {
-    dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -251,10 +251,14 @@ export default function Partner() {
                     initial={{ opacity: 0.1 }}
                     animate={{ opacity: 1 }}
                   >
+                    <Box tw="object-contain  mx-auto">
                     <GatsbyImage
                       image={node.childImageSharp?.gatsbyImageData}
+                      
+                      tw="h-[400px] w-96 mx-auto"
                       alt={node.base.split("-").join(" ").split(".")[0]}
                     />
+                    </Box>
                   </Flex>
                 </motion.Box>
               </AnimatePresence>
