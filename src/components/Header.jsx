@@ -25,12 +25,15 @@ export default function Header() {
             home
           </Link>
           <Link
-            to="/"
+            to="#partner"
             tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
           >
             Partner
           </Link>
-          <Link tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100">
+          <Link
+            to="#contact"
+            tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
+          >
             Kontakt
           </Link>
         </Flex>

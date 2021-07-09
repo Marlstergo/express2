@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Grid, Box, Flex, Heading } from "@chakra-ui/react";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { motion, AnimatePresence } from "framer-motion";
 import { graphql, useStaticQuery } from "gatsby";
@@ -49,7 +49,7 @@ export default function Partner() {
     slidesToScroll: 1,
   };
   return (
-    <>
+    <Box id="partner">
       <Box display={["none", "none", "block", "block"]}>
         <Heading align="center" size="lg" my={16}>
           Unsere Partner
@@ -66,8 +66,8 @@ export default function Partner() {
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
               <motion.Box
-                whileHover={{ opacity: 0.7 }}
-                transition={{ duration: 0.3 }}
+                
+                tw="hover:opacity-70"
               >
                 <Flex
                   w="100%"
@@ -92,7 +92,7 @@ export default function Partner() {
           ))}
         </Grid>
       </Box>
-      <Box display={["none", "none", "block", "block"]}>
+      {/* <Box display={["none", "none", "block", "block"]}>
         <Heading align="center" size="lg" my={16}>
           Unsere Partner
         </Heading>
@@ -229,7 +229,7 @@ export default function Partner() {
             </Flex>
           </motion.Box>
         </Grid>
-      </Box>
+      </Box> */}
       <Box>
         <Box p="10" tw="md:hidden">
           <Heading align="center" size="lg" my={8}>
@@ -241,8 +241,12 @@ export default function Partner() {
                 <motion.Box
                   whileHover={{ opacity: 0.7 }}
                   transition={{ duration: 0.3 }}
+                  // tw="hover:opacity-50"
+
                 >
                   <Flex
+                  tw="hover:opacity-70"
+
                     w="100%"
                     h="400"
                     _hover={{}}
@@ -255,7 +259,7 @@ export default function Partner() {
                     <GatsbyImage
                       image={node.childImageSharp?.gatsbyImageData}
                       
-                      tw="h-[400px] w-96 mx-auto"
+                      tw="h-[400px] w-96 mx-auto "
                       alt={node.base.split("-").join(" ").split(".")[0]}
                     />
                     </Box>
@@ -270,6 +274,6 @@ export default function Partner() {
           </Slider>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }

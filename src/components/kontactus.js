@@ -30,7 +30,7 @@ import {
 
 export default function FormKontact() {
   return (
-    <Box tw="relative bg-white">
+    <Box tw="relative bg-white" id="contact">
       <Box tw="absolute inset-0">
         <Box tw="absolute inset-y-0 left-0 w-1/2 bg-white" />
       </Box>
@@ -93,7 +93,7 @@ export default function FormKontact() {
               <Box>
                 <Button
                   type="submit"
-                  tw="inline-flex justify-center px-6 py-3 text-white text-base font-medium bg-indigo-600 hover:bg-indigo-700 border border-transparent rounded-md focus:outline-none shadow-sm focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  tw="inline-flex justify-center px-6 py-3 text-white text-base font-medium bg-gray-500 hover:bg-gray-600 border border-transparent rounded-md focus:outline-none shadow-sm focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                 >
                   Submit
                 </Button>
