@@ -4,8 +4,15 @@ import { useStaticQuery, graphql } from "gatsby";
 
 export default function Address({ showCompanyType }) {
   const { site } = useStaticQuery(query);
-  const { companyType, person, street, streetNumber, zipCode, city } =
-    site.siteMetadata;
+  const {
+    // companyName,  // TODO: Kapitalgesellschaften
+    companyType,
+    person,
+    street,
+    streetNumber,
+    zipCode,
+    city,
+  } = site.siteMetadata;
 
   let companyHeadElement;
 

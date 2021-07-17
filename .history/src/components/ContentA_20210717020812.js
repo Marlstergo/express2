@@ -26,9 +26,11 @@ const ContentA = ({ number, title }) => {
         return (
           <BackgroundImage
             Tag="section"
-            
+            // className={className/}
+            // fixed={imageData}
             fluid={data.desktop.childImageSharp.fluid}
             tw="bg-fixed"
+            // backgroundColor={`#040e18`}
           >
             <Box>
               <Box h="100vh" w="full" tw="overflow-hidden">

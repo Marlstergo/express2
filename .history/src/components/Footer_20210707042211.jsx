@@ -1,5 +1,7 @@
+/* EXAMPLE */
 
 import React from "react";
+// import { useStaticQuery, Link, graphql } from "gatsby";
 import "twin.macro";
 import { Box, Flex } from "@chakra-ui/layout";
 import { motion } from "framer-motion";
@@ -8,6 +10,8 @@ import Logo from "../images/logo.svg";
 import { Link } from "@chakra-ui/react";
 
 export default function Footer({ animate, reff }) {
+  // const { site } = useStaticQuery(query);
+  // const { tel, domain } = site.siteMetadata;
 
   return (
     <footer ref={reff} id="footer">
@@ -29,3 +33,13 @@ Footer.propTypes = {
   reff: PropTypes.any,
 };
 
+// const query = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         tel
+//         domain
+//       }
+//     }
+//   }
+// `;

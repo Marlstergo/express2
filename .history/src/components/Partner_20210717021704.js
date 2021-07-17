@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { graphql, useStaticQuery } from "gatsby";
 import "twin.macro";
 
+import Slider from "react-slick";
+
 export default function Partner() {
   const pageQuery = useStaticQuery(graphql`
     query {
@@ -31,6 +33,13 @@ export default function Partner() {
   `);
   console.log(pageQuery);
 
+  const settings = {
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <Box id="partner">
       <Box display={["none", "none", "block", "block"]}>
@@ -46,7 +55,10 @@ export default function Partner() {
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
-              <motion.Box tw="hover:opacity-70">
+              <motion.Box
+                
+                tw="hover:opacity-70"
+              >
                 <Flex
                   w="100%"
                   h="300"
@@ -63,8 +75,51 @@ export default function Partner() {
                 </Flex>
               </motion.Box>
             </AnimatePresence>
+           
           ))}
         </Grid>
+      </Box>
+  
+      <Box>
+        <Box p="10" tw="md:hidden">
+          <Heading align="center" size="lg" my={8}>
+            Unsere Partner
+          </Heading>
+          <Slider {...settings}>
+            {pageQuery.slideShow.edges.map(({ node }) => (
+              <AnimatePresence key={node.id}>
+                <motion.Box
+                  whileHover={{ opacity: 0.7 }}
+                  transition={{ duration: 0.3 }}
+                  // tw="hover:opacity-50"
+
+                >
+                  <Flex
+                  tw="hover:opacity-70"
+
+                    w="100%"
+                    h="400"
+                    _hover={{}}
+                    my="auto"
+                    align="center"
+                    initial={{ opacity: 0.1 }}
+                    animate={{ opacity: 1 }}
+                  >
+                    <Box tw="object-contain  mx-auto">
+                    <GatsbyImage
+                      image={node.childImageSharp?.gatsbyImageData}
+                      
+                      tw="h-[400px] w-96 mx-auto "
+                      alt={node.base.split("-").join(" ").split(".")[0]}
+                    />
+                    </Box>
+                  </Flex>
+                </motion.Box>
+              </AnimatePresence>
+              
+            ))}
+          </Slider>
+        </Box>
       </Box>
     </Box>
   );

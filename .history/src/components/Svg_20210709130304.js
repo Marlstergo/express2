@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+// import { useTransform, useViewportScroll } from "framer-motion";
 import PropTypes from "prop-types";
 import React from "react";
 import "twin.macro";
+
+// import Svggg from "../images/logo_white.svg";
 
 Svg.propTypes = {
   removeAnimation: PropTypes.func,
@@ -11,8 +14,13 @@ Svg.propTypes = {
 };
 
 function Svg({ removeAnimation, scale, opacity, opacity1 }) {
+  // const { scrollYProgress } = useViewportScroll();
+
+  // const aqua = useTransform(scrollYProgress, [0, 0.1], [1, 0.2]);
+
   return (
     <>
+      {/* <img src={Svggg} alt="logo" /> */}
       <motion.svg
         tw="fixed top-0 mt-20 h-64"
         animate={
@@ -30,6 +38,9 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
         style={{
           scale,
           zIndex: 600,
+          // stroke: "yellow",
+          // fill: "green",
+          // fill: "brown",
         }}
         version="1.1"
         id="Ebene_1"
@@ -44,7 +55,14 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
       >
         <g id="g26">
           <motion.path
-        
+            style={
+              {
+                // stroke: white
+                // fill: "purple",
+                // fill: aqua,
+                // scrollMarginBottom: '-'
+              }
+            }
             fill="none"
             stroke="#1D1102"
             strokeWidth="44.8518"
@@ -86,7 +104,9 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           scale,
           opacity,
           zIndex: 600,
-          
+          // stroke: "yellow",
+          // fill: "green",
+          // fill: "brown",
         }}
         version="1.1"
         id="Ebene_1"
@@ -101,12 +121,21 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
       >
         <g id="g26">
           <motion.path
+            style={
+              {
+                // stroke: white
+                // fill: "purple",
+                // fill: aqua,
+                // scrollMarginBottom: '-'
+              }
+            }
             fill="none"
             stroke="#ffffff"
             strokeWidth="44.8518"
             strokeMiterlimit="10"
             d="M758.46,932.218H84.797V258.547H758.46   V932.218z"
             id="path6"
+            // animate
           />
 
           <g id="g18">
@@ -141,7 +170,9 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           scale,
           opacity: opacity1,
           zIndex: 600,
-          
+          // stroke: "yellow",
+          // fill: "green",
+          // fill: "brown",
         }}
         version="1.1"
         id="Ebene_1"
@@ -156,13 +187,16 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
       >
         <g id="g26">
           <motion.path
-            style={{
-              // stroke: white
-              // fill: "purple",
-              // fill: aqua,
-              // scrollMarginBottom: '-'
-              opacity: opacity1,
-            }}
+            style={
+              {
+                // stroke: white
+                // fill: "purple",
+                // fill: aqua,
+                // scrollMarginBottom: '-'
+          opacity: opacity1,
+
+              }
+            }
             fill="none"
             stroke="#1D1102"
             strokeWidth="44.8518"
@@ -186,6 +220,7 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           </g>
         </g>
       </motion.svg>
+
     </>
   );
 }

@@ -8,12 +8,12 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
-const ContentA = ({ number, title }) => {
+const ContentC = ({ number, title }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "02.jpg" }) {
+          desktop: file(relativePath: { eq: "03.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -23,15 +23,22 @@ const ContentA = ({ number, title }) => {
         }
       `}
       render={(data) => {
+        // console.log(number);
+        // const imageData =
+        //   number == "01"
+        //     ? data.desktop.childImageSharp.fluid
+        //     : data.pc.childImageSharp.fluid;
         return (
           <BackgroundImage
             Tag="section"
-            
+            // className={className/}
+            // fixed={imageData}
             fluid={data.desktop.childImageSharp.fluid}
             tw="bg-fixed"
+            // backgroundColor={`#040e18`}
           >
             <Box>
-              <Box h="100vh" w="full" tw="overflow-hidden">
+              <Box h="100vh" w="full">
                 <Flex w="full" tw="flex justify-center h-full">
                   <Flex
                     direction="column"
@@ -63,7 +70,10 @@ const ContentA = ({ number, title }) => {
                       color="gray.300"
                       tw=""
                     >
-                      Beratung Reperatur Verkauf Wartung
+                      Reparatur und Wartung nahezu aller Marken von
+                      Siebträger-Espressomaschinen im nördlichen
+                      Schleswig-Holstein, der Westküste und im südlichen
+                      Dänemark
                     </Text>
                   </Flex>
                   <Box
@@ -82,7 +92,7 @@ const ContentA = ({ number, title }) => {
   );
 };
 
-ContentA.propTypes = {
+ContentC.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -91,4 +101,4 @@ ContentA.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentA;
+export default ContentC;

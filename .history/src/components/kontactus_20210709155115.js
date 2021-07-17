@@ -1,6 +1,23 @@
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+*/
 import React from "react";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import "twin.macro";
+// import { Link } from "gatsby";
 import {
   Box,
   Input,
@@ -18,7 +35,7 @@ export default function FormKontact() {
         <Box tw="absolute inset-y-0 left-0 w-1/2 bg-white" />
       </Box>
       <Box tw="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-        <Box tw="mx-auto px-4 py-16 w-4/5 bg-white sm:px-6 md:w-3/5 lg:col-span-5 lg:px-8 lg:py-24 xl:pl-12">
+        <Box tw="px-4 py-16 w-4/5 md:w-3/5 mx-auto bg-white sm:px-6 lg:col-span-5 lg:px-8 lg:py-24 xl:pl-12">
           <Box tw="mx-auto max-w-lg lg:max-w-none">
             <FormControl action="#" method="POST" tw="grid gap-y-6 grid-cols-1">
               <Box>
@@ -86,15 +103,16 @@ export default function FormKontact() {
         </Box>
         <Box tw="px-4 py-16 bg-gray-50 sm:px-6 lg:col-span-5 lg:px-8 lg:py-24 xl:pr-12">
           <Box tw="mx-auto max-w-2xl">
-            <Box tw="flex flex-col items-center justify-around w-full text-gray-500 text-base space-y-4 md:flex-row md:space-y-0">
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3">
+            
+            <Box tw=" text-gray-500 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 text-base w-full justify-around">
+              <Box tw="w-3/4 md:w-1/3 mx-auto flex flex-col justify-center items-center">
                 <Text tw="sr-only">Postal address</Text>
                 <Text>
                   <Text>742 Evergreen Terrace</Text>
                   <Text>Springfield, OR 12345</Text>
                 </Text>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3">
+              <Box tw="w-3/4 md:w-1/3 mx-auto flex flex-col justify-center items-center">
                 <Text tw="sr-only">Phone number</Text>
                 <Text tw="flex">
                   <PhoneIcon
@@ -104,7 +122,7 @@ export default function FormKontact() {
                   <Text tw="ml-3">+1 (555) 123-4567</Text>
                 </Text>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3">
+              <Box tw="w-3/4 md:w-1/3 mx-auto flex flex-col justify-center items-center">
                 <Text tw="sr-only">Email</Text>
                 <Text tw="flex">
                   <MailIcon
@@ -115,8 +133,10 @@ export default function FormKontact() {
                 </Text>
               </Box>
             </Box>
+            
           </Box>
         </Box>
+        
       </Box>
     </Box>
   );

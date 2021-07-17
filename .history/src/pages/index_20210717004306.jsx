@@ -169,12 +169,13 @@ const IndexPage = () => {
             />
           </Flex>
           <Hero />
-          <ContentA title="Espressomaschinen" number="01"  />
-          <ContentB title="Kaffeemühlen" number="02" />
-          <ContentC title="Werkstatt" number="03"  />
-          <ContentD title="Ersatzteile" number="04" />
+          <ContentA title="Espressomaschinen" number="01" info="" />
+          <ContentB title="Kaffeemühlen" number="02" info="" />
+          <ContentC title="Werkstatt" number="03" key="3" info="" />
+          <ContentD title="Ersatzteile" number="04" info="" />
           <Partner />
           <Carousels />
+
           <FormKontact />
         </Box>
         {/* <GbiBridged/> */}

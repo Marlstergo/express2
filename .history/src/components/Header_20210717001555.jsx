@@ -1,11 +1,18 @@
 /* EXAMPLE */
 
 import React from "react";
+// import { useStaticQuery, graphql } from "gatsby";
 import "twin.macro";
 import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "gatsby";
+// import React from "react";
+// Example
+// import { FiPhone, FiMenu, FiX } from "react-icons/fi";
+// import { ImWhatsapp } from "react-icons/im";
 
 export default function Header() {
+  // const { site } = useStaticQuery(query);
+  // const { tel } = site.siteMetadata;
 
   return (
     <header id="header">
@@ -34,3 +41,13 @@ export default function Header() {
     </header>
   );
 }
+
+// const query = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         tel
+//       }
+//     }
+//   }
+// `;

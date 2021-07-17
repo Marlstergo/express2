@@ -31,7 +31,19 @@ function Hero() {
             />
           </div>
 
-
+          <motion.p
+            tw="z-0 w-full text-lg lg:w-1/4"
+            style={{
+              opacity,
+              zIndex: -100,
+            }}
+            className="md px-0 px-3 text-lg"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+            aspernatur tenetur iste aliquam itaque sapiente, minus reiciendis
+            omnis tempora soluta error, veniam quam. Aut iste natus nisi
+            aspernatur nostrum? Ad?
+          </motion.p>
         </motion.div>
       </Box>
     </>
