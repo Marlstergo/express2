@@ -23,11 +23,9 @@ const ContentB = ({ number, title, info }) => {
         }
       `}
       render={(data) => {
-
         return (
           <BackgroundImage
             Tag="section"
-     
             fluid={data.desktop.childImageSharp.fluid}
             tw="bg-fixed"
           >

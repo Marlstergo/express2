@@ -65,10 +65,7 @@ export default function Partner() {
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
-              <motion.Box
-                
-                tw="hover:opacity-70"
-              >
+              <motion.Box tw="hover:opacity-70">
                 <Flex
                   w="100%"
                   h="300"
@@ -242,11 +239,9 @@ export default function Partner() {
                   whileHover={{ opacity: 0.7 }}
                   transition={{ duration: 0.3 }}
                   // tw="hover:opacity-50"
-
                 >
                   <Flex
-                  tw="hover:opacity-70"
-
+                    tw="hover:opacity-70"
                     w="100%"
                     h="400"
                     _hover={{}}
@@ -255,13 +250,12 @@ export default function Partner() {
                     initial={{ opacity: 0.1 }}
                     animate={{ opacity: 1 }}
                   >
-                    <Box tw="object-contain  mx-auto">
-                    <GatsbyImage
-                      image={node.childImageSharp?.gatsbyImageData}
-                      
-                      tw="h-[400px] w-96 mx-auto "
-                      alt={node.base.split("-").join(" ").split(".")[0]}
-                    />
+                    <Box tw="mx-auto object-contain">
+                      <GatsbyImage
+                        image={node.childImageSharp?.gatsbyImageData}
+                        tw="h-[400px] mx-auto w-96"
+                        alt={node.base.split("-").join(" ").split(".")[0]}
+                      />
                     </Box>
                   </Flex>
                 </motion.Box>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import "twin.macro";
 import { Box, Flex } from "@chakra-ui/layout";
@@ -27,4 +26,3 @@ Footer.propTypes = {
   animate: PropTypes.func,
   reff: PropTypes.any,
 };
-

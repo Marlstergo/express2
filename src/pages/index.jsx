@@ -169,9 +169,9 @@ const IndexPage = () => {
             />
           </Flex>
           <Hero />
-          <ContentA title="Espressomaschinen" number="01"  />
+          <ContentA title="Espressomaschinen" number="01" />
           <ContentB title="Kaffeemühlen" number="02" />
-          <ContentC title="Werkstatt" number="03"  />
+          <ContentC title="Werkstatt" number="03" />
           <ContentD title="Ersatzteile" number="04" />
           <Partner />
           <Carousels />

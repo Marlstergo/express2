@@ -11,7 +11,6 @@ import { graphql, useStaticQuery } from "gatsby";
 // import "slick-carousel/slick/slick.css";
 import "twin.macro";
 
-
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -66,10 +65,7 @@ export default function Partner() {
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
-              <motion.Box
-                
-                tw="hover:opacity-70"
-              >
+              <motion.Box tw="hover:opacity-70">
                 <Flex
                   w="100%"
                   h="300"
@@ -275,6 +271,6 @@ export default function Partner() {
           </Slider>
         </Box>
       </Box> */}
-    </Box> 
+    </Box>
   );
 }

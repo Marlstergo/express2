@@ -44,7 +44,6 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
       >
         <g id="g26">
           <motion.path
-        
             fill="none"
             stroke="#1D1102"
             strokeWidth="44.8518"
@@ -86,7 +85,6 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           scale,
           opacity,
           zIndex: 600,
-          
         }}
         version="1.1"
         id="Ebene_1"
@@ -141,7 +139,6 @@ function Svg({ removeAnimation, scale, opacity, opacity1 }) {
           scale,
           opacity: opacity1,
           zIndex: 600,
-          
         }}
         version="1.1"
         id="Ebene_1"

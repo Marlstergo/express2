@@ -65,10 +65,7 @@ export default function Partner() {
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
-              <motion.Box
-                
-                tw="hover:opacity-70"
-              >
+              <motion.Box tw="hover:opacity-70">
                 <Flex
                   w="100%"
                   h="300"
@@ -274,6 +271,6 @@ export default function Partner() {
           </Slider>
         </Box>
       </Box> */}
-    </Box> 
+    </Box>
   );
 }

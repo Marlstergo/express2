@@ -23,7 +23,6 @@ const ContentC = ({ number, title }) => {
         }
       `}
       render={(data) => {
-
         return (
           <BackgroundImage
             Tag="section"

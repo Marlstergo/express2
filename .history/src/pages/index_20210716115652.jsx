@@ -175,7 +175,7 @@ const IndexPage = () => {
           <ContentD title="Ersatzteile" number="04" info="" />
           <Partner />
           <FormKontact />
-          <Carousels/>
+          <Carousels />
         </Box>
         {/* <GbiBridged/> */}
       </main>

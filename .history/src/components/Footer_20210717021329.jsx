@@ -1,4 +1,3 @@
-
 import React from "react";
 import "twin.macro";
 import { Box, Flex } from "@chakra-ui/layout";
@@ -8,7 +7,6 @@ import Logo from "../images/logo.svg";
 import { Link } from "@chakra-ui/react";
 
 export default function Footer({ animate, reff }) {
-
   return (
     <footer ref={reff} id="footer">
       <Box p="20" h="60" className="">
@@ -28,4 +26,3 @@ Footer.propTypes = {
   animate: PropTypes.func,
   reff: PropTypes.any,
 };
-

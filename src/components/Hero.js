@@ -30,8 +30,6 @@ function Hero() {
               }}
             />
           </div>
-
-
         </motion.div>
       </Box>
     </>

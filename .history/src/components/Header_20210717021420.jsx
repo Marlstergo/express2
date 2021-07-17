@@ -6,7 +6,6 @@ import { Box, Flex } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 export default function Header() {
-
   return (
     <header id="header">
       <Box className="">
