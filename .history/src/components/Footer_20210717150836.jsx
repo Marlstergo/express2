@@ -5,9 +5,10 @@ import { Box, Flex } from "@chakra-ui/layout";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import Logo from "../images/logo.svg";
-import { Link } from "gatsby";
+import { Link } from "@chakra-ui/react";
 
 export default function Footer({ animate, reff }) {
+
   return (
     <footer ref={reff} id="footer">
       <Box p="20" h="60" className="">
