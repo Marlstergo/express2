@@ -16,4 +16,3 @@ export default function LayoutMDX({ children }) {
 LayoutMDX.propTypes = {
   children: PropTypes.node.isRequired,
 };
- 
