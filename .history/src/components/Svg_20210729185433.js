@@ -20,12 +20,13 @@ Svg.propTypes = {
   logic: PropTypes.func,
 };
 
-function Svg({ removeAnimation, scale, hide, opacity }) {
+function Svg({  removeAnimation, scale, hide  }) {
   // const [show] = useState(logic);
   // console.log(logic)
   // const zindx = show ? 900 : 300;
   const { scrollYProgress } = useViewportScroll();
-  const hide1 = useTransform(scrollYProgress, [0.12499, 0.125], [1, 0]);
+    const hide1 = useTransform(scrollYProgress, [0.7499999, 0.75], [1, 0]);
+
 
   return (
     <>
@@ -35,7 +36,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
           ({
             originY: -0.3,
             originX: 0,
-            opacity,
+            // opacity,
             transition: "easein",
           },
           removeAnimation)

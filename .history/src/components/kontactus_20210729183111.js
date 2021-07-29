@@ -102,7 +102,7 @@ export default function FormKontact() {
                   </Text>
                 </Box>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+              <Box tw="flex flex-col lg:w-4/5 items-center justify-center mx-auto w-3/4 md:w-1/3">
                 <Text tw="sr-only">Phone number</Text>
                 <Text tw="flex">
                   <PhoneIcon
@@ -112,7 +112,7 @@ export default function FormKontact() {
                   <Text tw="ml-3">+1 (555) 123-4567</Text>
                 </Text>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+              <Box tw="flex flex-col lg:w-full items-center justify-center mx-auto w-3/4 md:w-1/3">
                 <Text tw="sr-only">Email</Text>
                 <Text tw="flex">
                   <MailIcon

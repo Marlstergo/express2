@@ -9,7 +9,7 @@ import {
   FormControl,
   Button,
   Textarea,
-  // Flex,
+  Flex,
 } from "@chakra-ui/react";
 
 export default function FormKontact() {
@@ -86,11 +86,11 @@ export default function FormKontact() {
           </Box>
         </Box>
         <Box tw="px-4 py-16 bg-gray-50 sm:px-6 lg:col-span-5 lg:px-8 lg:py-24 xl:pr-12">
-          <Box tw="mx-auto max-w-4xl">
+          <Box tw="mx-auto max-w-2xl">
             <Box tw="flex flex-col items-center justify-around w-full text-gray-500 text-base space-y-4 md:flex-row md:space-y-0">
               <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-full">
                 <Text tw="sr-only">Postal address</Text>
-                <Box>
+                <Flex display>
                   <Text display={["none", "none", "none", "block"]}>
                     742 Evergreen Terrace Springfield, OR 12345
                   </Text>
@@ -100,9 +100,9 @@ export default function FormKontact() {
                   <Text display={["block", "block", "block", "none"]}>
                     Springfield, OR 12345
                   </Text>
-                </Box>
+                </Flex>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3">
                 <Text tw="sr-only">Phone number</Text>
                 <Text tw="flex">
                   <PhoneIcon
@@ -112,7 +112,7 @@ export default function FormKontact() {
                   <Text tw="ml-3">+1 (555) 123-4567</Text>
                 </Text>
               </Box>
-              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3">
                 <Text tw="sr-only">Email</Text>
                 <Text tw="flex">
                   <MailIcon

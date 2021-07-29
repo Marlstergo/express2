@@ -25,7 +25,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
   // console.log(logic)
   // const zindx = show ? 900 : 300;
   const { scrollYProgress } = useViewportScroll();
-  const hide1 = useTransform(scrollYProgress, [0.12499, 0.125], [1, 0]);
+  const hide1 = useTransform(scrollYProgress, [0.17999, 0.18], [1, 0]);
 
   return (
     <>

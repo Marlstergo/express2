@@ -81,12 +81,12 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-6 h-full">
               <StaticImage src="../images/Mahlkoenig Logo.svg" alt="Ascaso" />{" "}
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-4 h-full">
               <StaticImage
                 src="../images/Eureka_1920_Logo-rot.jpg"
                 alt="Ascaso"
@@ -94,7 +94,7 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-4 h-full">
               <StaticImage
                 src="../images/ECM Logo Vektor_einfach.svg"
                 alt="Ascaso"
@@ -102,12 +102,12 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-5 h-full">
               <StaticImage src="../images/VBM-logo.png" alt="Ascaso" />{" "}
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-5 h-full">
               <StaticImage src="../images/asc-Fabrik-Logo.png" alt="Ascaso" />{" "}
             </Box>
           </Box>

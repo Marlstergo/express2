@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import React from "react";
 import "twin.macro";
 
-import {
-  // motion,
-  useViewportScroll,
-  useTransform,
-  // useAnimation,
-} from "framer-motion";
+// import {
+//   // motion,
+//   useViewportScroll,
+//   useTransform,
+//   useAnimation,
+// } from "framer-motion";
 
 Svg.propTypes = {
   removeAnimation: PropTypes.func,
@@ -20,12 +20,12 @@ Svg.propTypes = {
   logic: PropTypes.func,
 };
 
-function Svg({ removeAnimation, scale, hide, opacity }) {
+function Svg({  removeAnimation, scale, opacity, hide }) {
   // const [show] = useState(logic);
   // console.log(logic)
   // const zindx = show ? 900 : 300;
-  const { scrollYProgress } = useViewportScroll();
-  const hide1 = useTransform(scrollYProgress, [0.12499, 0.125], [1, 0]);
+  // const { scrollYProgress } = useViewportScroll();
+  // const show = useTransform(scrollYProgress, [0, 0.17], [1, 0.5]);
 
   return (
     <>
@@ -45,7 +45,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
         }}
         style={{
           scale,
-          opacity: hide1,
+          opacity: hide,
           zIndex: 600,
         }}
         version="1.1"

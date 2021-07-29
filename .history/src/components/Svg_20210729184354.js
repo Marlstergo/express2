@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
 import "twin.macro";
-
-import {
-  // motion,
-  useViewportScroll,
-  useTransform,
-  // useAnimation,
-} from "framer-motion";
 
 Svg.propTypes = {
   removeAnimation: PropTypes.func,
@@ -20,12 +13,10 @@ Svg.propTypes = {
   logic: PropTypes.func,
 };
 
-function Svg({ removeAnimation, scale, hide, opacity }) {
-  // const [show] = useState(logic);
-  // console.log(logic)
+function Svg({ logic, removeAnimation, scale, opacity, hide }) {
+  const [show] = useState(logic);
+  console.log(logic)
   // const zindx = show ? 900 : 300;
-  const { scrollYProgress } = useViewportScroll();
-  const hide1 = useTransform(scrollYProgress, [0.12499, 0.125], [1, 0]);
 
   return (
     <>
@@ -45,8 +36,8 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
         }}
         style={{
           scale,
-          opacity: hide1,
-          zIndex: 600,
+          opacity: hide,
+          zIndex: show,
         }}
         version="1.1"
         id="Ebene_1"

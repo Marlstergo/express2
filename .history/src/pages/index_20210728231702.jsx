@@ -1,6 +1,6 @@
 /* EXAMPLE */
 
-import React from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
@@ -35,19 +35,17 @@ import Carousels from "../components/corusel";
 
 // markup
 const IndexPage = () => {
+  // const reff = useRef()
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 0.17], [1, 0.5]);
   const opacity = useTransform(scrollYProgress, [0.15999, 0.16], [0, 1]);
-  const hide = useTransform(scrollYProgress, [0.7499999, 0.75], [1, 0]);
-  const zIndex = useTransform(scrollYProgress, [0.69999, 0.7], [700, 400]);
-  const logic = useTransform(scrollYProgress, [0, 0.7], [900, 300]);
   const opacity1 = useTransform(scrollYProgress, [0.8, 0.800001], [0, 1]);
   // const white = useTransform(scrollYProgress, [0, 0.25], [0.1, 1]);
   // const offset = useTransform(scrollYProgress, [0, 0.1], [1, 0.2]);
   // const red = useTransform(scrollYProgress, [0, 0.1], [0.5, 1]);
   // const view = useInView();
   const { ref, inView } = useInView({
-    threshold: 0.9,
+    threshold: 1,
   });
   console.log(ref);
   // const { reff, inViews } = useInView();
@@ -142,7 +140,7 @@ const IndexPage = () => {
         }
         */
         smooth
-        top={0}
+        top={5}
       />
 
       {/* <Box ref={ref}>
@@ -169,9 +167,6 @@ const IndexPage = () => {
               opacity={opacity}
               opacity1={opacity1}
               scale={scale}
-              hide={hide}
-              zIndex={zIndex}
-              logic={logic}
             />
           </Flex>
           <Hero />
@@ -179,9 +174,11 @@ const IndexPage = () => {
           <ContentB title="Kaffeemühlen" number="02" />
           <ContentC title="Werkstatt" number="03" />
           <ContentD title="Ersatzteile" number="04" />
-          <Partner />
-          <Carousels />
-          <FormKontact />
+          <Box ref={ref}>
+            <Partner />
+            <Carousels />
+            <FormKontact />
+          </Box>
         </Box>
         {/* <GbiBridged/> */}
       </main>

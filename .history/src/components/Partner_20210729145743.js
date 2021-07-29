@@ -53,8 +53,6 @@ export default function Partner() {
                   _hover={{}}
                   my="auto"
                   align="center"
-                  justifyContent="center"
-                  justify="center"
                   initial={{ opacity: 0.1 }}
                   animate={{ opacity: 1 }}
                 >

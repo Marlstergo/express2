@@ -51,7 +51,7 @@ const ContentA = ({ number, title }) => {
                     <Text
                       mb="10"
                       color="white"
-                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                      fontSize={["3xl", "3xl", "5xl", "5xl"]}
                       fontWeight="bold"
                       tw=""
                     >

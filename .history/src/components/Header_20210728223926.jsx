@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header id="header">
       <Box className="">
-        <Flex tw="z-50 flex justify-center mx-20 pt-5 2xl:text-3xl text-base space-x-6 md:justify-end md:text-xl">
+        <Flex tw="z-50 flex justify-center mx-20 pt-5 text-lg xl:text-3xl space-x-6 md:justify-end">
           <Link
             tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
             to="/"

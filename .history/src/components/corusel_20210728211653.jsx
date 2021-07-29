@@ -65,7 +65,7 @@ export default function Carousels() {
   return (
     <Flex
       w="full"
-      p={2}
+      p={10}
       alignItems="center"
       justifyContent="center"
       tw="md:hidden"
@@ -73,7 +73,7 @@ export default function Carousels() {
       <Flex w="full" pos="relative" overflow="hidden">
         <Flex h="400px" w="full" {...carouselStyle}>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-7 h-full">
               <StaticImage
                 src="../images/DC_RGB_DALLA CORTE_GREY MARK_300DPI.png"
                 alt="Ascaso"
@@ -81,12 +81,12 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-6 h-full">
               <StaticImage src="../images/Mahlkoenig Logo.svg" alt="Ascaso" />{" "}
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-4 h-full">
               <StaticImage
                 src="../images/Eureka_1920_Logo-rot.jpg"
                 alt="Ascaso"
@@ -94,7 +94,7 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-4 h-full">
               <StaticImage
                 src="../images/ECM Logo Vektor_einfach.svg"
                 alt="Ascaso"
@@ -102,12 +102,12 @@ export default function Carousels() {
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-5 h-full">
               <StaticImage src="../images/VBM-logo.png" alt="Ascaso" />{" "}
             </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Box tw="flex items-center justify-center px-12 h-full">
+            <Box tw="flex items-center justify-center px-5 h-full">
               <StaticImage src="../images/asc-Fabrik-Logo.png" alt="Ascaso" />{" "}
             </Box>
           </Box>
@@ -118,13 +118,13 @@ export default function Carousels() {
         <Text {...arrowStyles} right="0" onClick={nextSlide}>
           &#10095;
         </Text>
-        <HStack justify="center" pos="absolute" bottom="8px" w="full">
+        <HStack justify="center" pos="absolute" bottom="16px" w="full">
           {Array.from({ length: slidesCount }).map((_, slide) => (
             <Box
               key={`dots-${slide}`}
-              cursor=""
+              cursor="pointer"
               boxSize={["7px", "15px"]}
-              m="0 -2px"
+              m="0 2px"
               rounded="50%"
               display="inline-block"
               transition="background-color 0.6s ease"

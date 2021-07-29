@@ -42,25 +42,23 @@ export default function Partner() {
           mx="auto"
           templateRows="repeat(2, 1fr)"
           templateColumns="repeat(3, 1fr)"
-          gap={[null, 8, 8, 16, 20]}
+          gap={[null, 8, 8, 20, 20]}
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
               <motion.Box tw="hover:opacity-70">
                 <Flex
                   w="100%"
-                  h={[null, 300, 300, 300, 300]}
+                  h="300"
                   _hover={{}}
                   my="auto"
                   align="center"
-                  justifyContent="center"
-                  justify="center"
                   initial={{ opacity: 0.1 }}
                   animate={{ opacity: 1 }}
                 >
                   <GatsbyImage
                     image={node.childImageSharp?.gatsbyImageData}
-                    tw="xl: 2xl:w-96"
+                    tw="xl:h-56"
                     alt={node.base.split("-").join(" ").split(".")[0]}
                   />
                 </Flex>
