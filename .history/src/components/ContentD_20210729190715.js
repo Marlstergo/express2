@@ -3,16 +3,17 @@ import { graphql, StaticQuery } from "gatsby";
 import "twin.macro";
 import PropTypes from "prop-types";
 
+
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
-const ContentB = ({ number, title, info }) => {
+const ContentD = ({ number, title }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "01.jpg" }) {
+          desktop: file(relativePath: { eq: "04.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -61,7 +62,13 @@ const ContentB = ({ number, title, info }) => {
                       color="gray.300"
                       tw=""
                     >
-                      {info}
+                      Fast alle benötigten Ersatzteile der Partner-Marken
+                      DallaCorte, ASCASO, Mahlkönig, EUREKA, ecm, VBM (Vibiemme)
+                      Reneka und bwt water+more sind vorrätig
+                      <br />
+                      Viele Standard Ersatz- und Verschleißteile aller übrigen
+                      Marken sind vorhanden oder können meist schnell besorgt
+                      werden
                     </Text>
                   </Flex>
                   <Box
@@ -80,7 +87,7 @@ const ContentB = ({ number, title, info }) => {
   );
 };
 
-ContentB.propTypes = {
+ContentD.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -89,4 +96,4 @@ ContentB.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentB;
+export default ContentD;

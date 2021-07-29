@@ -7,12 +7,12 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
-const ContentB = ({ number, title, info }) => {
+const ContentA = ({ number, title }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "01.jpg" }) {
+          desktop: file(relativePath: { eq: "02.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -29,7 +29,7 @@ const ContentB = ({ number, title, info }) => {
             tw="bg-fixed"
           >
             <Box>
-              <Box h="100vh" w="full">
+              <Box h="100vh" w="full" tw="overflow-hidden">
                 <Flex w="full" tw="flex justify-center h-full">
                   <Flex
                     direction="column"
@@ -50,7 +50,7 @@ const ContentB = ({ number, title, info }) => {
                     <Text
                       mb="10"
                       color="white"
-                      fontSize="5xl"
+                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
                       fontWeight="bold"
                       tw=""
                     >
@@ -61,7 +61,7 @@ const ContentB = ({ number, title, info }) => {
                       color="gray.300"
                       tw=""
                     >
-                      {info}
+                      Beratung Reperatur Verkauf Wartung
                     </Text>
                   </Flex>
                   <Box
@@ -80,7 +80,7 @@ const ContentB = ({ number, title, info }) => {
   );
 };
 
-ContentB.propTypes = {
+ContentA.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -89,4 +89,4 @@ ContentB.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentB;
+export default ContentA;

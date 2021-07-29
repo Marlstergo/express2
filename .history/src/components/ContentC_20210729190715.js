@@ -7,12 +7,12 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
-const ContentB = ({ number, title, info }) => {
+const ContentC = ({ number, title }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "01.jpg" }) {
+          desktop: file(relativePath: { eq: "03.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -61,7 +61,10 @@ const ContentB = ({ number, title, info }) => {
                       color="gray.300"
                       tw=""
                     >
-                      {info}
+                      Reparatur und Wartung nahezu aller Marken von
+                      Siebträger-Espressomaschinen im nördlichen
+                      Schleswig-Holstein, der Westküste und im südlichen
+                      Dänemark
                     </Text>
                   </Flex>
                   <Box
@@ -80,7 +83,7 @@ const ContentB = ({ number, title, info }) => {
   );
 };
 
-ContentB.propTypes = {
+ContentC.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -89,4 +92,4 @@ ContentB.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentB;
+export default ContentC;
