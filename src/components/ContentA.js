@@ -3,7 +3,6 @@ import { graphql, StaticQuery } from "gatsby";
 import "twin.macro";
 import PropTypes from "prop-types";
 
-// import { Link } from "gatsby";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
