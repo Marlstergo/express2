@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
-import "twin.macro";
 import PropTypes from "prop-types";
 
 import { Box, Flex, Text } from "@chakra-ui/react";
@@ -26,25 +25,36 @@ const ContentA = ({ number, title }) => {
           <BackgroundImage
             Tag="section"
             fluid={data.desktop.childImageSharp.fluid}
-            tw="bg-fixed"
+            preserveStackingContext={true}
+            style={{
+              backgroundAttachment: "fixed",
+            }}
           >
             <Box>
-              <Box h="100vh" w="full" tw="overflow-hidden">
-                <Flex w="full" tw="flex justify-center h-full">
+              <Box h="100vh" w="full"
+              overflow="hidden"
+              >
+                <Flex
+                  w="full"
+                  justifyItems="center"
+                  h="full"
+                  
+                >
                   <Flex
                     direction="column"
                     h="full"
                     w={["100vw", null, null, "50%"]}
                     pl={["2", null, null, "36"]}
                     pr={["2", null, null, "12"]}
-                    tw="justify-center bg-black bg-opacity-50"
+              alignItems="center"
+              justifyItems="center"
+                    justifyContent="center"
+                    background="black"
+                    backgroundColor="rgba(0, 0, 0, 0.5)"
+                    
                   >
-                    <Text
-                      fontSize="5xl"
-                      fontWeight="bold"
-                      color="gray.300"
-                      tw=""
-                    >
+                    
+                    <Text fontSize="5xl" fontWeight="bold" color="gray.300">
                       {number}
                     </Text>
                     <Text
@@ -52,23 +62,23 @@ const ContentA = ({ number, title }) => {
                       color="white"
                       fontSize={["4xl", "4xl", "5xl", "5xl"]}
                       fontWeight="bold"
-                      tw=""
+                      
                     >
                       {title}
                     </Text>
                     <Text
                       fontSize={["lg", null, "xl", "2xl"]}
                       color="gray.300"
-                      tw=""
+                      
                     >
                       Beratung Reperatur Verkauf Wartung
                     </Text>
+                   
                   </Flex>
                   <Box
                     w="50%"
                     h="full"
                     display={["none", null, null, "block"]}
-                    tw="hidden lg:block"
                   ></Box>
                 </Flex>
               </Box>

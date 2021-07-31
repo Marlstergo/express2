@@ -46,11 +46,16 @@ export default function Partner() {
         >
           {pageQuery.slideShow.edges.map(({ node }) => (
             <AnimatePresence key={node.id}>
-              <motion.Box tw="hover:opacity-70">
+              <motion.Box
+
+              // tw="hover:opacity-70"
+              >
                 <Flex
                   w="100%"
                   h={[null, 300, 300, 300, 300]}
-                  _hover={{}}
+                  _hover={{
+                    opacity: "0.7",
+                  }}
                   my="auto"
                   align="center"
                   justifyContent="center"
@@ -60,6 +65,11 @@ export default function Partner() {
                 >
                   <GatsbyImage
                     image={node.childImageSharp?.gatsbyImageData}
+                    // style={{
+                    //   // width: {[null, null, null,"96"]}
+                    //   // ,
+                    //   scree
+                    // }}
                     tw="xl: 2xl:w-96"
                     alt={node.base.split("-").join(" ").split(".")[0]}
                   />
