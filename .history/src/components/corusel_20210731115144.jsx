@@ -68,12 +68,19 @@ export default function Carousels() {
       p={2}
       alignItems="center"
       justifyContent="center"
+      
       display={["block", "none", "none", "none"]}
     >
       <Flex w="full" pos="relative" overflow="hidden">
         <Flex h="400px" w="full" {...carouselStyle}>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Flex 
+      alignItems="center"
+      justifyContent="center"
+            px={12}
+            h="full"
+            
+            >
               <StaticImage
                 src="../images/DC_RGB_DALLA CORTE_GREY MARK_300DPI.png"
                 alt="Ascaso"
@@ -81,35 +88,41 @@ export default function Carousels() {
             </Flex>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Flex 
+            alignItems="center"
+            justifyContent="center"
+                  px={12}
+                  h="full"
+            tw="flex items-center justify-center px-12 h-full"
+            >
               <StaticImage src="../images/Mahlkoenig Logo.svg" alt="Ascaso" />{" "}
             </Flex>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Box tw="flex items-center justify-center px-12 h-full">
               <StaticImage
                 src="../images/Eureka_1920_Logo-rot.jpg"
                 alt="Ascaso"
               />{" "}
-            </Flex>
+            </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Box tw="flex items-center justify-center px-12 h-full">
               <StaticImage
                 src="../images/ECM Logo Vektor_einfach.svg"
                 alt="Ascaso"
               />{" "}
-            </Flex>
+            </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Box tw="flex items-center justify-center px-12 h-full">
               <StaticImage src="../images/VBM-logo.png" alt="Ascaso" />{" "}
-            </Flex>
+            </Box>
           </Box>
           <Box boxSize="full" shadow="md" flex="none">
-            <Flex alignItems="center" justifyContent="center" px={12} h="full">
+            <Box tw="flex items-center justify-center px-12 h-full">
               <StaticImage src="../images/asc-Fabrik-Logo.png" alt="Ascaso" />{" "}
-            </Flex>
+            </Box>
           </Box>
         </Flex>
         <Text {...arrowStyles} left="0" onClick={prevSlide}>

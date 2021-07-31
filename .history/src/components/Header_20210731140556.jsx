@@ -1,7 +1,7 @@
 /* EXAMPLE */
 
 import React from "react";
-
+import "twin.macro";
 import { Box, Text, Flex } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
@@ -18,49 +18,30 @@ export default function Header() {
           fontSize={["medium", "medium", "xl", "xl", "2xl"]}
           experimental_spaceX="6"
 
-          h="12"
+          // tw="z-50 flex justify-center mx-20 pt-5 2xl:text-3xl text-base space-x-6 md:justify-end md:text-xl"
         >
           <Link
-            
+            tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
             to="/"
           >
             <Text
-              color="black"
-              borderColor="blackAlpha.700"
+              color= "black"
+              borderColor= "blackAlpha.700"
               // borderBottom = "4px"
-              _hover={{ borderBottom: "4px" }}
-            >
-              Home
-            </Text>
+              _hover={{ borderBottom: '4px' }}
+            >Home</Text>
           </Link>
           <Link
-            
-            to="/"
-            style={{
-              height: "38px",
-            }}
+            to="/#partner"
+            tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
           >
-            <Text
-              color="black"
-              borderColor="blackAlpha.700"
-              // borderBottom = "4px"
-              _hover={{ borderBottom: "4px" }}
-            >
-              Partner
-            </Text>
+            Partner
           </Link>
           <Link
-      
-            to="/"
+            to="/#contact"
+            tw="text-black border-b-4 border-gray-700 border-opacity-0 hover:border-opacity-100"
           >
-            <Text
-              color="black"
-              borderColor="blackAlpha.700"
-             
-              _hover={{ borderBottom: "4px" }}
-            >
-              Kontakt
-            </Text>
+            Kontakt
           </Link>
         </Flex>
       </Box>

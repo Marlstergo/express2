@@ -18,7 +18,7 @@ export default function Header() {
           fontSize={["medium", "medium", "xl", "xl", "2xl"]}
           experimental_spaceX="6"
 
-          h="12"
+          
         >
           <Link
             

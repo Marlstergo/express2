@@ -191,15 +191,8 @@ export default function FormKontact() {
               experimental_spaceY={["4", "4", "0"]}
               // tw="flex flex-col items-center justify-around w-full text-gray-500 text-base space-y-4 md:flex-row md:space-y-0"
             >
-              <Flex 
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              justifyItems="center"
-              mx="auto"
-              w={["75%",null, "33.33%", "full"]}
-              // tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-full"
-              >
+              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-full">
+                <Text tw="sr-only">Postal address</Text>
                 <Box>
                   <Text display={["none", "none", "none", "block"]}>
                     742 Evergreen Terrace Springfield, OR 12345
@@ -211,63 +204,27 @@ export default function FormKontact() {
                     Springfield, OR 12345
                   </Text>
                 </Box>
-              </Flex>
-              <Flex 
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              justifyItems="center"
-              mx="auto"
-              w={["75%",null, "33.33%", "80%"]}
-
-              // tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5"
-              >
-                <Text 
-                display="flex"
-                // tw="flex"
-                >
+              </Box>
+              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+                <Text tw="sr-only">Phone number</Text>
+                <Text tw="flex">
                   <PhoneIcon
-                    style={{
-                      flexShrink: "0",
-                      width: "6",
-                      height: "6",
-                      color: "gray.400"
-                    }}
-                    // tw="flex-shrink-0 w-6 h-6 text-gray-400"
+                    tw="flex-shrink-0 w-6 h-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <Text 
-                  ml="3"
-                  // tw="ml-3"
-                  >+1 (555) 123-4567</Text>
+                  <Text tw="ml-3">+1 (555) 123-4567</Text>
                 </Text>
-              </Flex>
-              <Flex 
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              justifyItems="center"
-              mx="auto"
-              w={["75%",null, "33.33%", "80%"]}
-              // tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5"
-              >
-                <Text 
-                display="flex"
-                >
+              </Box>
+              <Box tw="flex flex-col items-center justify-center mx-auto w-3/4 md:w-1/3 lg:w-4/5">
+                <Text tw="sr-only">Email</Text>
+                <Text tw="flex">
                   <MailIcon
-                  style={{
-                    flexShrink: "0",
-                    width: "6",
-                    height: "6",
-                    color: "gray.400"
-                  }}
+                    tw="flex-shrink-0 w-6 h-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <Text 
-                  ml="3"
-                  >support@example.com</Text>
+                  <Text tw="ml-3">support@example.com</Text>
                 </Text>
-              </Flex>
+              </Box>
             </Flex>
           </Box>
         </Box>

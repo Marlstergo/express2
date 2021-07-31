@@ -242,7 +242,7 @@ export default function FormKontact() {
                   >+1 (555) 123-4567</Text>
                 </Text>
               </Flex>
-              <Flex 
+              <Box 
               direction="column"
               alignItems="center"
               justifyContent="center"
@@ -267,7 +267,7 @@ export default function FormKontact() {
                   ml="3"
                   >support@example.com</Text>
                 </Text>
-              </Flex>
+              </Box>
             </Flex>
           </Box>
         </Box>
