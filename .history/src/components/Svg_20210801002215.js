@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import React from "react";
+import "twin.macro";
 
 import {
 
@@ -27,6 +28,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
   return (
     <>
       <motion.svg
+        tw="fixed top-0 mt-20 h-64"
         animate={
           ({
             originY: -0.3,
@@ -44,8 +46,8 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
           scale,
           position: "fixed",
           top: 0,
-          height: "256",
-          marginTop: "80",
+          // height: "64px",
+          // marginTop: "20",
           opacity: hide1,
           zIndex: 600,
         }}
@@ -83,6 +85,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
         </g>
       </motion.svg>
       <motion.svg
+        tw="fixed top-0 mt-20 h-64"
         animate={
           ({
             originY: -0.3,
@@ -96,10 +99,6 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
           ease: "easeInOut",
         }}
         style={{
-          position: "fixed",
-          top: 0,
-          height: "256",
-          marginTop: "80",
           scale,
           opacity: hide,
           zIndex: 500,

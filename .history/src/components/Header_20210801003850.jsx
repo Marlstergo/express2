@@ -51,7 +51,7 @@ export default function Header() {
           </Link>
           <Link
       
-            to="/#contact"
+            to="/#Kontakt"
           >
             <Text
               color="black"
