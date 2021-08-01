@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Grid, Box, Flex, Heading } from "@chakra-ui/react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import "./partner.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { graphql, useStaticQuery } from "gatsby";
-import "twin.macro";
+
 
 export default function Partner() {
   const pageQuery = useStaticQuery(graphql`
@@ -48,7 +49,7 @@ export default function Partner() {
             <AnimatePresence key={node.id}>
               <motion.Box
 
-              // tw="hover:opacity-70"
+        
               >
                 <Flex
                   w="100%"
@@ -70,7 +71,7 @@ export default function Partner() {
                     //   // ,
                     //   scree
                     // }}
-                    tw="xl: 2xl:w-96"
+                    className="size"
                     alt={node.base.split("-").join(" ").split(".")[0]}
                   />
                 </Flex>
