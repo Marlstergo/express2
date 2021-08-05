@@ -36,7 +36,7 @@ export default function FormKontact() {
           gridColumnEnd="6"
           
         >
-          <Box mx="auto" maxW={["lg", null, null, "2xl"]}>
+          <Box mx="auto" maxW={["lg", null, null, "1444px"]}>
             <FormControl
               action="#"
               method="POST"

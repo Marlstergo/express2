@@ -26,7 +26,7 @@ import Partner from "../components/Partner";
 import Hero from "../components/Hero";
 import Svg from "../components/Svg";
 import Carousels from "../components/corusel";
-// import SvgMobile from "../components/SvgMobile";
+import SvgMobile from "../components/SvgMobile";
 
 
 const IndexPage = () => {
@@ -112,7 +112,7 @@ const IndexPage = () => {
               zIndex={zIndex}
               logic={logic}
             />
-            {/* <SvgMobile
+            <SvgMobile
               removeAnimation={removeAnimation}
               opacity={opacity}
               opacity1={opacity1}
@@ -121,7 +121,7 @@ const IndexPage = () => {
               zIndex={zIndex}
               logic={logic}
               
-            /> */}
+            />
           </Flex>
           <Hero />
           <ContentA title="Espressomaschinen" number="01" />

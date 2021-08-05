@@ -12,7 +12,7 @@ export default function Footer({ animate, reff }) {
       <Box p="20" h="60" className="">
         <Flex
           h="full"
-          experimental_spaceX="8"
+          experimental_spaceX="7"
           justifyContent="center"
           justifyItems="center"
         >

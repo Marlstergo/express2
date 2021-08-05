@@ -27,7 +27,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
   return (
     <>
       <motion.svg
-        // className="disD"
+        className="disD"
         animate={
           ({
             originY: -0.3,
@@ -144,7 +144,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
             display: none;
           }
           @media screen and (min-width: 768px) {
-						.disD {
+						.dis {
 							display: block;
 						}
 					}

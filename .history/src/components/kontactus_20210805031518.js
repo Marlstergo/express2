@@ -34,9 +34,8 @@ export default function FormKontact() {
           bg="white"
           gridColumnStart="1"
           gridColumnEnd="6"
-          
         >
-          <Box mx="auto" maxW={["lg", null, null, "2xl"]}>
+          <Box mx="auto" maxW={["lg", null, null, "none"]}>
             <FormControl
               action="#"
               method="POST"

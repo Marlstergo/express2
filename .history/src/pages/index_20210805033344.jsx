@@ -28,7 +28,6 @@ import Svg from "../components/Svg";
 import Carousels from "../components/corusel";
 // import SvgMobile from "../components/SvgMobile";
 
-
 const IndexPage = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 0.17], [1, 0.5]);
@@ -38,19 +37,15 @@ const IndexPage = () => {
   const logic = useTransform(scrollYProgress, [0, 0.7], [900, 300]);
   const opacity1 = useTransform(scrollYProgress, [0.8, 0.800001], [0, 1]);
 
-
   const { ref, inView } = useInView({
     threshold: 0.9,
   });
   console.log(ref);
 
-
   const animation = useAnimation();
   const removeAnimation = useAnimation();
- 
 
   useEffect(() => {
-
     if (inView) {
       animation.start({
         y: 0,
@@ -92,15 +87,13 @@ const IndexPage = () => {
         aria-label="scroll to top"
         style={{ backgroundColor: "" }}
         className="scroll-to-top"
-        
         smooth
         top={0}
       />
 
-  
       <main>
         <title>Home Page</title>
-   
+
         <Box className="">
           <Flex w="full" className="image z-0 justify-center w-full">
             <Svg
@@ -120,7 +113,6 @@ const IndexPage = () => {
               hide={hide}
               zIndex={zIndex}
               logic={logic}
-              
             /> */}
           </Flex>
           <Hero />
@@ -132,7 +124,6 @@ const IndexPage = () => {
           <Carousels />
           <FormKontact />
         </Box>
-    
       </main>
     </Layout>
   );

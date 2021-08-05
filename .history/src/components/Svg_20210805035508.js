@@ -27,7 +27,7 @@ function Svg({ removeAnimation, scale, hide, opacity }) {
   return (
     <>
       <motion.svg
-        // className="disD"
+        className="disD"
         animate={
           ({
             originY: -0.3,
