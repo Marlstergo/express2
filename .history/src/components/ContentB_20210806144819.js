@@ -1,17 +1,19 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
+import "twin.macro";
 import PropTypes from "prop-types";
 
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
+// import Header from "./Header";
 
-const ContentC = ({ number, title }) => {
+const ContentB = ({ number, title, info }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "03.jpg" }) {
+          desktop: file(relativePath: { eq: "01.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -39,26 +41,28 @@ const ContentC = ({ number, title }) => {
                     pl={["2", null, null, "36"]}
                     pr={["2", null, null, "12"]}
                     justifyItems="center"
+                    // alignItems="center"
                     justifyContent="center"
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
                   >
-                    <Heading fontSize="5xl" fontWeight="bold" color="gray.300">
+                    <Heading
+                      fontSize="5xl"
+                      fontWeight="bold"
+                      color="gray.300"
+                    >
                       {number}
                     </Heading>
                     <Text
                       mb="10"
                       color="white"
-                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                      fontSize={["3xl", "3xl", "5xl", "5xl"]}
                       fontWeight="bold"
                     >
                       {title}
                     </Text>
                     <Text fontSize={["lg", null, "xl", "2xl"]} color="gray.300">
-                      Reparatur und Wartung nahezu aller Marken von
-                      Siebträger-Espressomaschinen im nördlichen
-                      Schleswig-Holstein, der Westküste und im südlichen
-                      Dänemark
+                      {info}
                     </Text>
                   </Flex>
                   <Box
@@ -76,7 +80,7 @@ const ContentC = ({ number, title }) => {
   );
 };
 
-ContentC.propTypes = {
+ContentB.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -85,4 +89,4 @@ ContentC.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentC;
+export default ContentB;

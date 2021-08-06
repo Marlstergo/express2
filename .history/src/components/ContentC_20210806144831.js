@@ -31,7 +31,9 @@ const ContentC = ({ number, title }) => {
           >
             <Box>
               <Box h="100vh" w="full">
-                <Flex w="full" justifyItems="center" h="full">
+                <Flex w="full"
+                  justifyItems="center"
+                  h="full">
                   <Flex
                     direction="column"
                     h="full"
@@ -42,19 +44,27 @@ const ContentC = ({ number, title }) => {
                     justifyContent="center"
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
+                    
                   >
-                    <Heading fontSize="5xl" fontWeight="bold" color="gray.300">
+                    <Heading
+                      fontSize="5xl"
+                      fontWeight="bold"
+                      color="gray.300"
+                    >
                       {number}
                     </Heading>
                     <Text
                       mb="10"
                       color="white"
-                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                      fontSize={["3xl", "3xl", "5xl", "5xl"]}
                       fontWeight="bold"
                     >
                       {title}
                     </Text>
-                    <Text fontSize={["lg", null, "xl", "2xl"]} color="gray.300">
+                    <Text
+                      fontSize={["lg", null, "xl", "2xl"]}
+                      color="gray.300"
+                    >
                       Reparatur und Wartung nahezu aller Marken von
                       Siebträger-Espressomaschinen im nördlichen
                       Schleswig-Holstein, der Westküste und im südlichen

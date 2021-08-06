@@ -6,12 +6,12 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
-const ContentC = ({ number, title }) => {
+const ContentD = ({ number, title }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "03.jpg" }) {
+          desktop: file(relativePath: { eq: "04.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -49,16 +49,19 @@ const ContentC = ({ number, title }) => {
                     <Text
                       mb="10"
                       color="white"
-                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                      fontSize={["3xl", "3xl", "5xl", "5xl"]}
                       fontWeight="bold"
                     >
                       {title}
                     </Text>
                     <Text fontSize={["lg", null, "xl", "2xl"]} color="gray.300">
-                      Reparatur und Wartung nahezu aller Marken von
-                      Siebträger-Espressomaschinen im nördlichen
-                      Schleswig-Holstein, der Westküste und im südlichen
-                      Dänemark
+                      Fast alle benötigten Ersatzteile der Partner-Marken
+                      DallaCorte, ASCASO, Mahlkönig, EUREKA, ecm, VBM (Vibiemme)
+                      Reneka und bwt water+more sind vorrätig
+                      <br />
+                      Viele Standard Ersatz- und Verschleißteile aller übrigen
+                      Marken sind vorhanden oder können meist schnell besorgt
+                      werden
                     </Text>
                   </Flex>
                   <Box
@@ -76,7 +79,7 @@ const ContentC = ({ number, title }) => {
   );
 };
 
-ContentC.propTypes = {
+ContentD.propTypes = {
   number: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.string,
@@ -85,4 +88,4 @@ ContentC.propTypes = {
   cofee: PropTypes.any,
 };
 
-export default ContentC;
+export default ContentD;
