@@ -45,13 +45,13 @@ const ContentA = ({ number, title }) => {
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
                   >
-                    <Heading fontSize="7xl" fontWeight="bold" color="gray.300">
+                    <Heading fontSize="7xl"       fontWeight="bold" color="gray.300">
                       {number}
                     </Heading>
                     <Text
                       mb="10"
                       color="white"
-                      fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                      fontSize={["4xl", "4xl", "2xl", "5xl","5xl"]}
                       fontWeight="bold"
                     >
                       {title}

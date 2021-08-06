@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 import BackgroundImage from "gatsby-background-image";
 
@@ -45,9 +45,14 @@ const ContentA = ({ number, title }) => {
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
                   >
-                    <Heading fontSize="7xl" fontWeight="bold" color="gray.300">
+                    <Text
+                      as="h1"
+                      fontSize="5xl"
+                      fontWeight="bold"
+                      color="gray.300"
+                    >
                       {number}
-                    </Heading>
+                    </Text>
                     <Text
                       mb="10"
                       color="white"

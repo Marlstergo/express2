@@ -1,11 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
-
 const theme = {
   // https://github.com/chakra-ui/chakra-ui/blob/main/packages/theme/src/foundations/typography.ts
   fonts: {
-    body: "Roboto, Sans-serif",
-    heading: "Platino Linotype, Book Antique, serif",
+    body: "system-ui, sans-serif",
+    heading: "Georgia, serif",
     mono: "Menlo, monospace",
   },
   // https://chakra-ui.com/docs/theming/customize-theme#customizing-global-styles

@@ -45,7 +45,11 @@ const ContentA = ({ number, title }) => {
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
                   >
-                    <Heading fontSize="7xl" fontWeight="bold" color="gray.300">
+                    <Heading
+                      fontSize="5xl"
+                      fontWeight="bold"
+                      color="gray.300"
+                    >
                       {number}
                     </Heading>
                     <Text

@@ -45,17 +45,21 @@ const ContentA = ({ number, title }) => {
                     background="black"
                     backgroundColor="rgba(0, 0, 0, 0.5)"
                   >
-                    <Heading fontSize="7xl" fontWeight="bold" color="gray.300">
+                    <Heading
+                      fontSize="5xl"
+                      fontWeight="bold"
+                      color="gray.300"
+                    >
                       {number}
                     </Heading>
-                    <Text
+                    <Heading
                       mb="10"
                       color="white"
                       fontSize={["4xl", "4xl", "5xl", "5xl"]}
                       fontWeight="bold"
                     >
                       {title}
-                    </Text>
+                    </Heading>
                     <Text fontSize={["lg", null, "xl", "2xl"]} color="gray.300">
                       Beratung Reperatur Verkauf Wartung
                     </Text>
