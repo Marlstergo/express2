@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import Logo from "../images/logo.svg";
 import { Link } from "gatsby";
-// import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer({ animate, reff }) {
   return (
@@ -24,8 +24,7 @@ export default function Footer({ animate, reff }) {
         <Flex justify="center" overflow="hidden">
           <motion.img
             style={{
-              width: '200px7',
-              height: '200px'
+              width: 200,
             }}
             src={Logo}
             animate={animate}

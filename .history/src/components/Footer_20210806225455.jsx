@@ -24,8 +24,7 @@ export default function Footer({ animate, reff }) {
         <Flex justify="center" overflow="hidden">
           <motion.img
             style={{
-              width: '200px7',
-              height: '200px'
+              width: '200x',
             }}
             src={Logo}
             animate={animate}
