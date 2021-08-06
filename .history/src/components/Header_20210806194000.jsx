@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Box, Flex,  Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { Link } from "gatsby";
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
           justifyContent={["center", "center", "flex-end", "flex-end"]}
           mx={20}
           pt={5}
-          fontSize={["lg", "lx", "xl", "2xl"]}
+          fontSize={["small", "small", "md", "lg", "xl"]}
           experimental_spaceX="6"
           h="12"
         >
@@ -35,23 +35,23 @@ export default function Header() {
               height: "38px",
             }}
           >
-            <Text
+            <Heading
               color="black"
               borderColor="blackAlpha.700"
               // borderBottom = "4px"
               _hover={{ borderBottom: "4px" }}
             >
               Partner
-            </Text>
+            </Heading>
           </Link>
           <Link to="/#contact">
-            <Text
+            <Heading
               color="black"
               borderColor="blackAlpha.700"
               _hover={{ borderBottom: "4px" }}
             >
               Kontakt
-            </Text>
+            </Heading>
           </Link>
         </Flex>
       </Box>

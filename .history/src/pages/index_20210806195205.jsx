@@ -33,10 +33,10 @@ const IndexPage = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 0.17], [1, 0.5]);
   const opacity = useTransform(scrollYProgress, [0.15999, 0.16], [0, 1]);
-  const hide = useTransform(scrollYProgress, [0.72, 0.74], [1, 0]);
+  const hide = useTransform(scrollYProgress, [0.7499999, 0.75], [1, 0]);
   const zIndex = useTransform(scrollYProgress, [0.69999, 0.7], [700, 400]);
   const logic = useTransform(scrollYProgress, [0, 0.7], [900, 300]);
-  const opacity1 = useTransform(scrollYProgress, [0.7, 0.7150001], [0, 1]);
+  const opacity1 = useTransform(scrollYProgress, [0.78, 0.7850001], [0, 1]);
 
 
   const { ref, inView } = useInView({

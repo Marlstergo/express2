@@ -15,7 +15,7 @@ export default function Header() {
           justifyContent={["center", "center", "flex-end", "flex-end"]}
           mx={20}
           pt={5}
-          fontSize={["lg", "lx", "xl", "2xl"]}
+          fontSize={["lg", "lg", "xl", "2xl"]}
           experimental_spaceX="6"
           h="12"
         >
